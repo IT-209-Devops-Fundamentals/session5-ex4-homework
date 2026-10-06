@@ -1,12 +1,10 @@
-﻿// Production API Server v1.0.0
+﻿// Production API Server v1.0.1 - SECURITY PATCH
 function getUserProfile(user) {
-    // V1.0.0 implementation
+    // SECURITY PATCH: Loai bo thong tin nhay cam (password_hash va ssn)
     return {
         id: user.id,
         username: user.username,
-        email: user.email,
-        password_hash: user.password_hash, // CRITICAL SECURITY LEAK!
-        ssn: user.ssn                      // CRITICAL SECURITY LEAK!
+        email: user.email
     };
 }
 
