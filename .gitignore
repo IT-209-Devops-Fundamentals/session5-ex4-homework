@@ -1,0 +1,9 @@
+!.gitignore
+!README.md
+!server.js
+!chat.js
+!notification.js
+*.tmp
+.env
+Thumbs.db
+Desktop.ini
